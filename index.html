@@ -3,106 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Haris Amjad - Data Scientist</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Link to FontAwesome for icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <h1>Haris Amjad</h1>
-            <p>Data Scientist | Microsoft Certified Data Analyst | Microsoft Certified Trainer</p>
-            <div class="social-icons">
-                <a href="https://github.com/harris910" target="_blank">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/haris-amjad" target="_blank">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
+            <a class="navbar-brand" href="#">Haris Amjad</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- Summary Section -->
-    <section id="summary">
-        <h2>Summary</h2>
-        <p>
-            Haris Amjad currently works as a Data Scientist for one of the Fortune companies in the world through Turing. He is a Microsoft Certified Data Analyst and Microsoft Certified Trainer. A rigorous, task-driven Data Enthusiast with substantial experience in Data Science, Data Analysis, and Data Engineering.
-        </p>
+    <!-- About Section -->
+    <section id="about" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">About Me</h2>
+            <p>
+                I am Haris Amjad, a Data Scientist at one of the world’s leading AI companies through Turing. I hold certifications as a Microsoft Certified Data Analyst and Microsoft Certified Trainer. I am passionate about solving complex data problems using AI, Machine Learning, and advanced data engineering techniques.
+            </p>
+            <div class="social-icons mt-4">
+                <a href="https://github.com/harris910" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/haris-amjad" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="experience">
-            <h3>Strategic Systems International, Lahore</h3>
-            <p><strong>Data Analyst - Software Engineer</strong> | July 2022 - June 2024</p>
-            <ul>
-                <li>Designed and maintained data ingestion pipelines using AWS Glue, DMS, SSIS, and custom ETL processes.</li>
-                <li>Processed data using PySpark, SQL, and AWS Glue for storage in data warehouses.</li>
-                <li>Developed interactive dashboards and reports using AWS Quicksight and Microsoft Power BI.</li>
-                <li>Implemented optimized monitoring solutions with Python and CloudWatch to ensure system health.</li>
-            </ul>
-
-            <h3>i2c, Lahore</h3>
-            <p><strong>AI - Associate Data Analyst / Data Scientist</strong> | July 2021 - May 2022</p>
-            <ul>
-                <li>Analyzed data with Jupyter notebooks for AI model training.</li>
-                <li>Created data visualizations using Plotly, Seaborn, and Matplotlib.</li>
-                <li>Assisted in developing AI models to detect fraudulent banking transactions using PyTorch, TensorFlow, and scikit-learn.</li>
-                <li>Evaluated AI models with Precision, Recall, F1-Score, and confusion matrix metrics.</li>
-            </ul>
-
-            <h3>CureMD, Lahore</h3>
-            <p><strong>Database - Business Intelligence Intern</strong> | May 2020 - March 2021</p>
-            <ul>
-                <li>Worked on automating medical appointment scheduling using machine learning.</li>
-                <li>Developed complete visualization solutions on Power BI to enhance business operations.</li>
-            </ul>
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Experience</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Strategic Systems International</h3>
+                    <p><strong>Data Analyst - Software Engineer</strong> | July 2022 - June 2024</p>
+                    <ul>
+                        <li>Designed and maintained data pipelines using AWS Glue and SQL.</li>
+                        <li>Developed dashboards and reports using AWS Quicksight and Power BI.</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <h3>i2c Inc.</h3>
+                    <p><strong>AI - Associate Data Analyst</strong> | July 2021 - May 2022</p>
+                    <ul>
+                        <li>Analyzed data for AI model training using Jupyter notebooks.</li>
+                        <li>Developed data visualizations using Plotly, Seaborn, and Matplotlib.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming: Python, C++, SQL (Postgres, MySQL, T-SQL), NoSQL (MongoDB, Cassandra)</li>
-            <li>Machine Learning: PyTorch, TensorFlow, scikit-learn</li>
-            <li>Data Visualization: Power BI, Plotly, Matplotlib, Seaborn</li>
-            <li>AWS: Glue, DMS, Redshift, Athena</li>
-        </ul>
+    <section id="skills" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Programming</h4>
+                    <ul>
+                        <li>Python, C++, SQL, NoSQL</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Machine Learning</h4>
+                    <ul>
+                        <li>PyTorch, TensorFlow, scikit-learn</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Data Visualization</h4>
+                    <ul>
+                        <li>Power BI, Plotly, Matplotlib</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>FAST NUCES, Lahore</strong> | CGPA: 3.81 | <em>Bachelor of Computer Science (2017 - 2021)</em></p>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Microsoft Certified Trainer (2020 - 2024)</li>
-            <li>Microsoft Certified Data Analyst Associate (2020 - 2024)</li>
-        </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Projects</h2>
+            <p class="text-center">Explore my work on <a href="https://github.com/harris910" target="_blank">GitHub</a>.</p>
+        </div>
     </section>
 
     <!-- Publications Section -->
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li><strong>TrackerSift: Untangling Mixed Tracking and Functional Web Resources</strong></li>
-            <p>Abdul Haddi Amjad, Danial Saleem, Zubair Shafiq, Muhammad Ali Gulzar</p>
-            <p>Internet Measurement Conference (IMC) 2021</p>
-        </ul>
+    <section id="publications" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Publications</h2>
+            <ul>
+                <li><strong>TrackerSift: Untangling Mixed Tracking and Functional Web Resources</strong></li>
+                <p>Abdul Haddi Amjad, Danial Saleem, Zubair Shafiq, Muhammad Ali Gulzar</p>
+                <p>Internet Measurement Conference (IMC) 2021</p>
+            </ul>
+        </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Haris Amjad | All rights reserved.</p>
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Get in Touch</h2>
+            <p>Email: <a href="mailto:haris.amjad910@gmail.com">haris.amjad910@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 Haris Amjad. All Rights Reserved.</p>
+        </div>
     </footer>
+
+    <!-- Bootstrap & jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
