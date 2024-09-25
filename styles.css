@@ -96,6 +96,18 @@ h2 {
     text-align: center; /* Center align the position */
 }
 
+/* Larger font size for key sections */
+.work-experience h2,
+.certifications h2,
+.accomplishments h2 {
+    font-size: 32px; /* Larger font size for section headings */
+}
+
+.skills h2,
+.projects h2 {
+    font-size: 32px; /* Larger font size for skills/projects headings */
+}
+
 /* Paragraph styles */
 p {
     color: #666; /* Medium grey for paragraph text */
@@ -116,7 +128,10 @@ p {
 }
 
 /* Spacing for skills, certifications, accomplishments, and projects */
-.skills, .certifications, .accomplishments, .projects {
+.skills,
+.certifications,
+.accomplishments,
+.projects {
     margin-bottom: 30px;
 }
 
@@ -129,6 +144,7 @@ p {
     margin: 5px 0; /* Adjust margin for consistency */
 }
 
+/* Line break styling */
 .line-break {
     height: 2px; /* Height of the line */
     background-color: #ccc; /* Light gray color for the line */
