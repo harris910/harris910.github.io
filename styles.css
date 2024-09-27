@@ -92,63 +92,74 @@ h1 {
 
 h2 {
     font-size: 26px;
-    color: #555; /* Dark grey heading */
-    margin-bottom: 20px;
+    color: #555; /* Grey color for position */
     text-align: center; /* Center align the position */
-}
-
-/* Larger font size for key sections */
-.work-experience h2,
-.certifications h2,
-.accomplishments h2 {
-    font-size: 32px; /* Larger font size for section headings */
-}
-
-.skills h2,
-.projects h2 {
-    font-size: 32px; /* Larger font size for skills/projects headings */
-}
-
-/* Paragraph styles */
-p {
-    color: #666; /* Medium grey for paragraph text */
-    line-height: 1.6;
 }
 
 /* Section title styling */
 .section-title {
-    color: #555;
-    font-size: 18px;
     font-weight: bold;
+    font-size: 22px;
     margin-bottom: 10px;
+    color: #3C3D37; /* Darker grey color for section titles */
+    border-bottom: 2px solid #697565; /* Underline with color matching the top bar */
+    padding-bottom: 5px;
 }
 
-/* Work experience styling */
-.work-experience .job {
-    margin-bottom: 30px;
+/* Job position styling */
+.position {
+    font-size: 18px;
+    font-weight: 600; /* Semi-bold to emphasize the role */
+    color: #333; /* Dark color for position */
+    margin-bottom: 5px; /* Space between position and company name */
 }
 
-/* Spacing for skills, certifications, accomplishments, and projects */
-.skills,
-.certifications,
-.accomplishments,
-.projects {
-    margin-bottom: 30px;
+/* Company name styling */
+.company-name {
+    font-size: 16px;
+    font-weight: 400; /* Regular weight for company name */
+    color: #697565; /* Lighter color for company name */
+    margin-bottom: 10px; /* Space between company name and time period */
 }
 
-/* Specific styling for the Education section */
-.education {
-    width: 100%; /* Ensure full width in the left column */
+/* Time period styling */
+.time-period {
+    font-size: 14px;
+    font-weight: 400; /* Regular weight for time period */
 }
 
-.education p {
-    margin: 5px 0; /* Adjust margin for consistency */
+/* Link icon styling */
+.link-icon {
+    width: 20px; /* Icon size */
+    height: 20px; /* Icon size */
+    margin-left: 5px; /* Spacing between text and icon */
 }
 
-/* Line break styling */
-.line-break {
-    height: 2px; /* Height of the line */
-    background-color: #ccc; /* Light gray color for the line */
-    margin: 20px 0; /* Spacing above and below the line */
-    width: 100%; /* Full width of the container */
+/* Technical content section styling */
+.technical-content {
+    margin-top: 20px; /* Spacing above the section */
 }
+/* Link icon styling */
+.link-icon {
+    width: 20px; /* Icon size */
+    height: 20px; /* Icon size */
+    margin-right: 5px; /* Spacing between text and icon */
+}
+
+/* Technical content section styling */
+.technical-content {
+    margin-top: 20px; /* Spacing above the section */
+}
+
+/* Remove underline from links */
+.link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Ensure text color matches parent */
+}
+/* Research contribution section styling */
+.research-contribution {
+    margin-top: 20px; /* Spacing above the section */
+}
+
+
+
